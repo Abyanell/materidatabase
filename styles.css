@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333333;
+    
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 lightskyblue;
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid white ;
+
+}
+
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+    animation: color-change-4x 6s linear infinite alternate both;
+    
+}
+
+
+@keyframes color-change-4x {
+    0% {
+      background: #19dcea;
+    }
+    33.3333% {
+      background: #b22cff;
+    }
+    66.666% {
+      background: #ea2222;
+    }
+    100% {
+      background: #f5be10;
+    }
+  }
+
+
+.header .judul{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.nf1{
+    height: 150px;
+    background-image: url(img/1nf.png);
+    background-size: cover;
+    background-position: 0 0px;
+    margin-bottom: 10px;
+    
+
+
+}
+
+
+.nf2{
+    height: 300px;
+    background-image: url(img/2nf.png);
+    background-size: cover;
+    background-position: 0 0;
+    margin-bottom: 20px;
+
+}
+
+
+.nf3{
+   height: 250px;
+   background-image: url(img/3nf.png);
+   background-size: cover;
+   background-position: 0 0;
+   margin-bottom: 20px;
+ 
+}
+
+
+.hero{
+    height: 280px;
+    background-image: url(img/cash-macanaya-jd4rMSCTXlM-unsplash.png) ;
+    background-size: cover;
+    background-position: 0 -180px;
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid salmon;
+    
+}
+
+.conten{
+    padding: 20px;
+
+
+}
+
+.conten h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.conten .penulis{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.conten .penulis a{
+    color: salmon;
+    text-decoration: none;
+}
+
+.conten .penulis a:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+
+.conten p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+p span{
+    font-size: 24px;
+    font-weight: bold;
+}

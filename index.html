@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>latihan 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 class="judul">Materi Database</h1>
+        
+    </div>
+    <div class="hero">
+    </div>
+    <div class="conten">
+        <h2>Normalisasi Database 1NF, 2NF & 3NF</h2>
+        <p class="penulis">ditulis oleh <a href="#">Abyan Estu</a>. pada 13/10/2021</p>
+
+
+        <p><span>1NF:</span>
+            Suatu tabel dikatakan 1NF jika dan hanya jika setiap setiap atribut dari data tersebut hanya memiliki nilai tunggal dalam satu baris , Jadi tabel yang belum normal tadi perlu diubah sehingga bentuk 1NF menjadi seperti ini:</p>
+            
+            <div class="nf1">
+
+            </div>
+            <p>Intinya pada tahap 1NF ini tidak diperbolehkan ada grouping data ataupun duplikasi data. Tahap selanjutnya 2NF</p>
+
+        <p><span>2NF:</span>
+            Syarat 2NF adalah tidak diperkenankan adanya partial “functional dependency” kepada primary key dalam sebuah tabel.
+            Apa itu “functional dependency”?
+            Itu adalah batasan keterkaitan antara 2 attribut dalam suatu tabel (pasti banyak yang bingung),
+            Intinya adalah pada 2NF ini tabel tersebut harus dipecah berdasarkan primary key. Sehingga bentuk 2NF dari tabel tersebut ialah sebagai berikut:</p>
+
+            <div class="nf2">
+
+            </div>
+
+            <p>Setelah dinormalisasi 2NF, tabelnya terpecah menjadi 4. Tahap selanjutnya ialah 3NF.</p>
+
+        <p><span>3NF:</span>
+            Pada 3NF tidak diperkenankan adanya partial “transitive dependency” dalam sebuah tabel.
+            Apa itu “transitive dependency”?
+            Transitive dependency merupakan functional dependency yang berdasarkan sifat transitifitas. (pasti bingung juga).
+            Intinya adalah pada 3NF ini, jika terdapat suatu atribut yang tidak bergantung pada primary key tapi bergantung pada field yang lain maka atribut-atribut tersebut perlu dipisah ke tabel baru, 
+            Contohnya ada pada atribut “keterangan_member”, field tersebut bergantung pada yang bukan merupakan primary key field “tipe_member”. Jadi setelah di normalisasi 3NF ialah sebagai berikut:
+
+            </p>
+
+            <div class="nf3">
+
+            </div>
+
+            <p>Seperti itulah cara melakukan normalisasi database 1NF, 2NF & 3NF. Semoga infomasi yang saya share ini dapat membantu, terima kasih bagi yang sudah membaca.</p>
+    </div>
+</div>
+</body>
+</html>
